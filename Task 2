@@ -1,0 +1,38 @@
+package q21920;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int s1 = s.nextInt();
+        int s2 = s.nextInt();
+        int s3 = s.nextInt();
+        int s4 = s.nextInt();
+        int s5 = s.nextInt();
+        
+        int Total;
+        double Percentage;
+        String grade = "";
+
+        Total = (s1 + s2 + s3 + s4 + s5);
+        Percentage = Total / 5.0;
+        System.out.println(Percentage + " Percent");
+
+        if (Percentage >= 90) {
+            grade = "A";
+        } else if (Percentage >= 80) {
+            grade = "B";
+        } else if (Percentage >= 70) {
+            grade = "C";
+        } else if (Percentage >= 60) {
+            grade = "D";
+        } else if (Percentage >= 50) {
+            grade = "E";
+        } else {
+            grade = "F";
+        }
+
+        System.out.println("Grade: " + grade);
+    }
+}
